@@ -150,8 +150,8 @@ const projects = [
 ];
 
 const certificates = [
-  { name: "HTML", level: "Intermediate", date: "2023", icon: <Layout /> },
-  { name: "CSS", level: "Intermediate", date: "2023", icon: <Monitor /> },
+  { name: "HTML", level: "Beginner", date: "2025", icon: <Layout /> },
+  { name: "CSS", level: "Beginner", date: "2025", icon: <Monitor /> },
   { name: "JAVASCRIPT", level: "Beginner", date: "2024", icon: <Code /> }
 ];
 
@@ -277,7 +277,7 @@ const Portfolio = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4 pl-6 border-l border-white/10">
-             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-all hover:scale-110"><Facebook size={20} /></a>
+             <a href="https://www.facebook.com/lorraine.tarcenio.5" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-all hover:scale-110"><Facebook size={20} /></a>
              <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-500 transition-all hover:scale-110"><UpworkIcon className="w-5 h-5" /></a>
           </div>
 
