@@ -308,7 +308,7 @@ const Portfolio = () => {
           <div className="mb-8 relative group cursor-pointer">
              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-slow"></div>
              <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-[3px] bg-black overflow-hidden hover:scale-105 transition-transform duration-500">
-               <img src="public/images/2x2.jpg" alt="Profile" className="w-full h-full rounded-full bg-[#1a1a2e]" />
+               <img src="/images/2x2.jpg" alt="Profile" className="w-full h-full rounded-full bg-[#1a1a2e]" />
              </div>
              <div className="absolute -right-2 top-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full border border-black shadow-lg animate-bounce-slow">
                Hire Me!
