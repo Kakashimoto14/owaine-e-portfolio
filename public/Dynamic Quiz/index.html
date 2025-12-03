@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/background.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/background.mp4" type="video/mp4">
+  </video>
+
+  <div id="quizApp">
+    <h2 class="gradient-text">Dynamic Quiz App</h2>
+
+    <!-- 10 Questions -->
+    <div class="question" data-answer="0">
+      <p>1. Which keyword declares a variable in JavaScript?</p>
+      <button class="option">var</button> <!-- correct -->
+      <button class="option">def</button>
+      <button class="option">int</button>
+      <button class="option">declare</button>
+    </div>
+
+    <div class="question" data-answer="2">
+      <p>2. Which symbol is used for comments in JavaScript?</p>
+      <button class="option">#</button>
+      <button class="option">--</button>
+      <button class="option">//</button> <!-- correct -->
+      <button class="option">%</button>
+    </div>
+
+    <div class="question" data-answer="0">
+      <p>3. Which method adds an element at the end of an array?</p>
+      <button class="option">push()</button> <!-- correct -->
+      <button class="option">pop()</button>
+      <button class="option">shift()</button>
+      <button class="option">unshift()</button>
+    </div>
+
+    <div class="question" data-answer="3">
+      <p>4. Which jQuery symbol is used to access elements?</p>
+      <button class="option">@</button>
+      <button class="option">#</button>
+      <button class="option">&</button>
+      <button class="option">$</button> <!-- correct -->
+    </div>
+
+    <div class="question" data-answer="2">
+      <p>5. Which function is used to delay execution in JavaScript?</p>
+      <button class="option">wait()</button>
+      <button class="option">pause()</button>
+      <button class="option">setTimeout()</button> <!-- correct -->
+      <button class="option">sleep()</button>
+    </div>
+
+    <div class="question" data-answer="1">
+      <p>6. Which jQuery method hides elements?</p>
+      <button class="option">.show()</button>
+      <button class="option">.hide()</button> <!-- correct -->
+      <button class="option">.toggle()</button>
+      <button class="option">.fadeIn()</button>
+    </div>
+
+    <div class="question" data-answer="0">
+      <p>7. Which operator checks both value and type in JavaScript?</p>
+      <button class="option">===</button> <!-- correct -->
+      <button class="option">==</button>
+      <button class="option">!=</button>
+      <button class="option">!==</button>
+    </div>
+
+    <div class="question" data-answer="3">
+      <p>8. Which jQuery method is used to attach event handlers?</p>
+      <button class="option">.click()</button>
+      <button class="option">.hover()</button>
+      <button class="option">.onClick()</button>
+      <button class="option">.on()</button> <!-- correct -->
+    </div>
+
+    <div class="question" data-answer="2">
+      <p>9. Which JavaScript method converts JSON string to object?</p>
+      <button class="option">JSON.stringify()</button>
+      <button class="option">JSON.convert()</button>
+      <button class="option">JSON.parse()</button> <!-- correct -->
+      <button class="option">JSON.object()</button>
+    </div>
+
+    <div class="question" data-answer="1">
+      <p>10. Which jQuery method gets the text content of an element?</p>
+      <button class="option">.html()</button>
+      <button class="option">.text()</button> <!-- correct -->
+      <button class="option">.val()</button>
+      <button class="option">.attr()</button>
+    </div>
+
+    <div id="result"></div>
+    <button id="submitQuiz" type="button">Submit Quiz</button>
+    <button id="restartQuiz" type="button">Restart Quiz</button>
+  </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

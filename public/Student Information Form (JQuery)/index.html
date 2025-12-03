@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reg Form (JQuery)</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/background.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <h2 class="gradient-text">Student Registration Form</h2>
+
+    <form id="studentForm">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" autocomplete="given-name">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" autocomplete="family-name">
+      </div>
+
+      <div class="form-group">
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" placeholder="00-00000">
+      </div>
+
+      <div class="form-group">
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section" placeholder="e.g., 1A">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" autocomplete="email">
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="15" max="100">
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+          <option value="">Select Course</option>
+          <option value="Computer Science"> BS in Computer Science</option>
+          <option value="Information Technology">BS in Information Technology</option>
+        </select>
+      </div>
+
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

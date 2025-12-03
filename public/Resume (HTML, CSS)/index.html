@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Resume Web</title>
+
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Calibri, sans-serif;
+        }
+
+        /* Background Image */
+        .bckgrnd {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: linear-gradient(to right, black, #1D2951, darkgreen, #1D2951, black);
+            padding: 15px 30px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .navdiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 10px;
+            text-shadow: 3px 4px 0 black;
+            text-transform: uppercase;
+        }
+
+        .nav-links ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 18px; /* Adjusted size for better fit */
+            border: 1px solid white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content Layout */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Vertically center content */
+        }
+
+        /* Container for the 3 Profiles */
+        .profiles-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows wrapping on mobile */
+            gap: 40px; /* Space between people */
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        /* Individual Profile Card */
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 320px; /* Fixed width for consistency */
+            background-color: rgba(0, 0, 0, 0.4); /* Optional: dark semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .name h2 {
+            color: white;
+            text-shadow: 2px 2px 0 black;
+            font-size: 22px;
+            margin-bottom: 15px;
+            height: 50px; /* Ensures names line up even if one wraps */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            background: white;
+            border-radius: 10px;
+            padding: 5px;
+            object-fit: cover;
+            border: 2px solid white;
+            margin-bottom: 20px;
+        }
+
+        .tagln h3 {
+            color: white;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: italic;
+            line-height: 1.5;
+            background: rgba(0,0,0,0.5); /* Background for text readability */
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, black, #1D2951, darkgreen, #1D2951, black);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="Pictures/BG.png" class="bckgrnd" alt="Background">
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="resume_back"></div>
+            
+            <div class="header">
+                <h1>HOME</h1>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Education.html">EDUCATION</a></li>
+                    <li><a href="Skills.html">SKILLS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="profiles-container">
+            
+            <div class="profile-card">
+                <div class="name">
+                    <h2>LORRAINE P. TARCENIO</h2>
+                </div>
+                <img src="Pictures/Tarcenio.jpg" class="profile-img" alt="Lorraine Tarcenio">
+                <div class="tagln">
+                    <h3>-I strive to expand my knowledge and skills by taking new responsibilities and embracing challenges.</h3>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="name">
+                    <h2>JOHN KHIAN C. DACULAN</h2>
+                </div>
+                <img src="Pictures/Daculan.jpg" class="profile-img" alt="John Khian Daculan">
+                <div class="tagln">
+                    <h3>-Man Eater</h3>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="name">
+                    <h2>VHANESSA B. LEGASPI</h2>
+                </div>
+                <img src="Pictures/Legaspi.jpg" class="profile-img" alt="Vhanessa Legaspi">
+                <div class="tagln">
+                    <h3>-Life is more vibrant when you know your purpose.</h3>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="foot">
+        <p>&copy; 2025 all rights reserved.</p>
+    </footer>
+
+</body>
+</html>

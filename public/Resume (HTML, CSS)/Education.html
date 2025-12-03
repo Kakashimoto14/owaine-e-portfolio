@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Resume Website</title>
+
+    <style>
+      body {
+        margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+       }
+       main {
+        flex: 1; padding: 20px;
+       }
+       footer {
+        background:linear-gradient(to right, black, #1D2951, darkgreen, #1D2951, black);color: white; margin-top: auto; text-align: center;
+       }
+       .bckgrnd {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;
+       }
+       * {
+         text-decoration: none;
+       }
+       .navbar {
+         background-color: darkgreen; padding: 0 15px 0 15px; background:linear-gradient(to right, black, #1D2951, 
+         darkgreen, #1D2951, black);
+       }
+       .navdiv {
+         display: flex; align-items: center;
+       }
+       .navdiv2 {
+         display: flex; align-items: center; justify-content: space-between; font-family: calibri; margin-left: -0.1%;
+       }
+       .Home_back a{
+         font-size: 40px; color: white; text-decoration: none; font-weight: bold; letter-spacing: 1px;
+       }
+       .header {
+         margin-left: 31.5%; font-size: 20px; color: white; letter-spacing: 10px; text-shadow: 3px 4px 0 black;
+       }
+       li {
+         list-style: none; display: inline-block;
+       }
+       li a{
+         color: white; font-size: 30px; margin-right: 20px; border: 1px solid white; padding: 5px; border-radius: 5
+         px;
+       }
+       .img {
+         justify-content: space-between; display: flex;
+       }
+       .img img{
+         width: 150px; height: 150px; background: white; border-radius: 10px; padding: 5px; object-fit: cover; 
+         margin: 5px 0 0 60px;
+       }
+       .img h2 {
+        margin-right: 60px; color: white; text-shadow: 0 0 0, 2px 2px 0 black;
+       }
+       .msgs {
+         display: flex; justify-content: space-between;margin: 0 75px 0 55px; font-family: sans-serif;
+       }
+       .msgs div {
+        padding: 10px; width: 25%; border-radius: 10px; background-color: darkgreen; border: 1px solid white; color: white;
+       }
+    </style>
+
+ </head>
+ <body> 
+ <main>
+  <img src="Pictures/BG.png" class="bckgrnd">
+
+  <nav class="navbar">
+     <div class="navdiv">
+      <div class="Home_back"><a href="index.html">⇦HOME</a></div>
+       <div class="header">
+          <h1>EDUCATION</h1>
+       </div>
+       <div class="navdiv2">
+        <ul>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Education.html">EDUCATION</a></li>
+          <li><a href="Skills.html">SKILLS</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+  </nav>
+
+  <div class="img">
+      <div>
+        <img src="Pictures/Tarcenio.jpg">
+      </div>
+      <div>
+        <h2>
+          LORRAINE P. TARCENIO
+        </h2>
+      </div>
+      <div>
+        <img src="Pictures/Daculan.jpg">
+      </div>
+      <div>
+        <h2>
+          JOHN KHIAN C. DACULAN
+        </h2>
+      </div>
+      <div>
+        <img src="Pictures/Legaspi.jpg">
+        </div>
+      <div>
+        <h2>
+        VHANESSA B. LEGASPI
+        </h2>
+      </div>
+   </div>
+
+ <div class="msgs">
+
+   <div class="msgdiv1" style="background:linear-gradient(to right, black, #1D2951);">
+    <h3><strong>● ELEMENTARY<br></strong>&emsp;Tagumpay E.S (2012-18)<br><br><strong>● JUNIOR HIGH<br></strong>&emsp;Tagumpay N.H.S. (2018-22)<br><br><strong>● SENIOR HIGH<br></strong>&emsp;San Jose-Litex (2022-24)<br><br><strong>● COLLEGE<br></strong>&emsp;Colegio de Montalban (2024-Present)</h3>
+   </div>
+
+   <div class="msgdiv2" style="background:linear-gradient(to right, #1D2951, darkgreen, #1D2951);">
+    <h3><strong>● ELEMENTARY<br></strong>&emsp;Towerville E.S (2010-17)<br><br><strong>● JUNIOR HIGH<br></strong>&emsp;Southville 8C N.H.S. (2017-18)<br>&emsp;Sto. Cristo N.H.S. (2018-21)<br><br><strong>● SENIOR HIGH<br></strong>&emsp;Asian Intitute of Computer Studies (2021-23)<br><br><strong>● COLLEGE<br></strong>&emsp;Colegio de Montalban (2024-Present)</h3>
+   </div>
+
+   <div class="msgdiv3" style="background:linear-gradient(to right, #1D2951, black);">
+    <h3><strong>● ELEMENTARY<br></strong>&emsp;Ajos E.S (2012-18)<br><br><strong>● JUNIOR HIGH<br></strong>&emsp;Kasiglahan Village N.H.S. (2018-22)<br><br><strong>● SENIOR HIGH<br></strong>&emsp;Holy Face of Jesus Lyceum of San Jose <br>&emsp;(2022-24)<br><br><strong>● COLLEGE<br></strong>&emsp;Colegio de Montalban (2024-Present)</h3>
+   </div>
+
+ </div>
+ </main>
+
+ <footer class="foot">
+    <p>
+      &copy; 2025 all rights reserved.
+    </p>
+ </footer>
+
+ </body>
+</html>
