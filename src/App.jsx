@@ -120,7 +120,7 @@ const projects = [
     category: "Game Dev",
     tech: ["JavaScript"],
     description: "Interactive memory tile game with score tracking logic.",
-    image: "memory.png",
+    image: "images/memory.png",
     link: "memory%20ni%20lovey/index.html"
   },
   {
