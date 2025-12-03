@@ -152,7 +152,7 @@ const projects = [
 const certificates = [
   { name: "HTML", level: "Beginner", date: "2025", icon: <Layout /> },
   { name: "CSS", level: "Beginner", date: "2025", icon: <Monitor /> },
-  { name: "JAVASCRIPT", level: "Beginner", date: "2024", icon: <Code /> }
+  { name: "JAVASCRIPT", level: "Beginner", date: "2025", icon: <Code /> }
 ];
 
 // --- MAIN COMPONENT ---
