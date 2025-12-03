@@ -112,7 +112,7 @@ const projects = [
     category: "Web Design",
     tech: ["HTML", "CSS"],
     description: "A responsive personal resume website showcasing professional history and skills.",
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600", 
+    image: "images/resume.png", 
     link: "Resume%20(HTML,%20CSS)/index.html" 
   },
   {
@@ -120,7 +120,7 @@ const projects = [
     category: "Game Dev",
     tech: ["JavaScript"],
     description: "Interactive memory tile game with score tracking logic.",
-    image: "https://images.unsplash.com/photo-1605806616949-1e87b487bc2a?auto=format&fit=crop&q=80&w=600",
+    image: "memory.png",
     link: "memory%20ni%20lovey/index.html"
   },
   {
@@ -128,7 +128,7 @@ const projects = [
     category: "Data Entry",
     tech: ["jQuery"],
     description: "Aesthetic form for collecting student data efficiently.",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600",
+    image: "images/srf.png",
     link: "Student%20Information%20Form%20(JQuery)/index.html"
   },
   {
@@ -136,7 +136,7 @@ const projects = [
     category: "Functionality",
     tech: ["JavaScript"],
     description: "Robust client-side validation providing real-time user feedback.",
-    image: "https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&q=80&w=600",
+    image: "images/formvalidation.png",
     link: "Student%20Info%20Form%20Validation/index.html"
   },
   {
@@ -144,7 +144,7 @@ const projects = [
     category: "Interactive",
     tech: ["jQuery"],
     description: "Engaging quiz application that calculates results instantly.",
-    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=600",
+    image: "images/quiz.png",
     link: "Dynamic%20Quiz/index.html"
   }
 ];
