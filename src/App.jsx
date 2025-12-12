@@ -150,9 +150,30 @@ const projects = [
 ];
 
 const certificates = [
-  { name: "HTML", level: "Beginner", date: "2025", icon: <Layout /> },
-  { name: "CSS", level: "Beginner", date: "2025", icon: <Monitor /> },
-  { name: "JAVASCRIPT", level: "Beginner", date: "2025", icon: <Code /> }
+  { 
+    name: "HTML", 
+    level: "Intermediate", 
+    date: "2023", 
+    icon: <Layout />, 
+    // Replace with your actual certificate image URL
+    image: "images/HTML.png" 
+  },
+  { 
+    name: "CSS", 
+    level: "Intermediate", 
+    date: "2023", 
+    icon: <Monitor />, 
+    // Replace with your actual certificate image URL
+    image: "images/CSS.png" 
+  },
+  { 
+    name: "JAVASCRIPT", 
+    level: "Beginner", 
+    date: "2024", 
+    icon: <Code />, 
+    // Replace with your actual certificate image URL
+    image: "images/JS.png" 
+  }
 ];
 
 // --- MAIN COMPONENT ---
@@ -413,7 +434,11 @@ const Portfolio = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {certificates.map((cert, index) => (
               <Reveal key={index} delay={index * 100}>
-                <div className="relative p-8 rounded-2xl bg-gradient-to-b from-white/5 to-transparent border border-white/5 hover:border-purple-500/30 transition-all duration-300 group overflow-hidden hover:bg-white/5">
+                {/* UPDATED: Added onClick handler and cursor-pointer class */}
+                <div 
+                  onClick={() => setSelectedCert(cert)}
+                  className="cursor-pointer relative p-8 rounded-2xl bg-gradient-to-b from-white/5 to-transparent border border-white/5 hover:border-purple-500/30 transition-all duration-300 group overflow-hidden hover:bg-white/5"
+                >
                   <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-colors -mr-10 -mt-10"></div>
                   
                   <div className="w-12 h-12 rounded-xl bg-[#030014] border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg group-hover:border-purple-500/50">
@@ -428,12 +453,62 @@ const Portfolio = () => {
                     <span className="w-1 h-1 rounded-full bg-slate-600"></span>
                     <span className="text-slate-500">{cert.date}</span>
                   </div>
+                  {/* Added explicit hint */}
+                  <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity text-xs text-purple-400 flex items-center gap-1">
+                    View <ExternalLink size={12} />
+                  </div>
                 </div>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
+
+      {/* ADDED: Certificate Modal Overlay */}
+      {selectedCert && (
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-lg animate-[fadeIn_0.3s_ease-out]"
+          onClick={() => setSelectedCert(null)}
+        >
+          <div 
+            className="relative w-full max-w-4xl bg-[#0f0c29] border border-white/10 rounded-2xl shadow-2xl overflow-hidden animate-[scaleIn_0.3s_ease-out]"
+            onClick={e => e.stopPropagation()}
+          >
+            <button 
+              onClick={() => setSelectedCert(null)}
+              className="absolute top-4 right-4 p-2 bg-black/50 hover:bg-white/20 rounded-full text-white transition-colors z-10 backdrop-blur-md"
+            >
+              <X size={24} />
+            </button>
+            
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-2/3 bg-black flex items-center justify-center p-2">
+                <img 
+                  src={selectedCert.image} 
+                  alt={`${selectedCert.name} Certificate`} 
+                  className="max-w-full max-h-[70vh] object-contain rounded-lg" 
+                />
+              </div>
+              <div className="w-full md:w-1/3 p-8 flex flex-col justify-center border-l border-white/5 bg-[#13112c]">
+                <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6">
+                  {selectedCert.icon}
+                </div>
+                <h3 className="text-3xl font-bold text-white mb-2">{selectedCert.name}</h3>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Level</p>
+                    <p className="text-slate-300">{selectedCert.level}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Date Issued</p>
+                    <p className="text-slate-300">{selectedCert.date}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Contact Section */}
       <section id="contact" className="relative z-10 py-32">
